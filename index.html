@@ -8,41 +8,15 @@
 <body>
     
         <script>
-                //Función simple
+               let v1 = prompt("Dame el valor del multiplicando",0);
+               let v2 = prompt("Dame el valor del multiplicador",0);
 
-                //Declarar función
-                function saludo(){
-                            document.write("Hola como estan, Bienvenidos al curso de programación!!!");
+               //..Ciclo el cual me permite iterar a partir de los valores de las variables capturadas.
+
+               for (let i = 1; i <= v2; i++) {
+               //..En cada iteración se imprime la siguiente estructura  ej: 9 * 1 = 9 
+               console.log(v1 + " * " + i + " = " + v1 * i);
                 }
-                //Llamar la función
-                saludo();
-                ////////////////////////////////////////////////////////////
-
-                //Función con parametros
-                function sumar(a,b) {
-                        return a + b;
-                }
-
-                let resultado = sumar(8,5);
-                alert("El resultado de la suma es " + resultado);
-
-               ////////////////////////////////////
-
-               function par(numero) {
-                        if (numero % 2 == 0) {
-                                alert("El número es par");
-                        }else{
-                                alert("El número es impar");
-                        }
-               }
-
-               let numero = 5;
-               //let EsNumero= par(numero);
-               par(numero);
-
-               for (let i = 1; i <= 10; i++){
-                       alert("El valor de i es: " + i);       
-               }
 
         </script>
 </body>
